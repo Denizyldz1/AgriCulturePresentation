@@ -1,0 +1,60 @@
+﻿
+@{
+	ViewData["Title"] = "Index";
+	Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+@await Component.InvokeAsync("_HeadPartial")
+<body>
+	
+	<!-- header -->
+	<div class="header">
+		<div class="container">
+			@await Component.InvokeAsync("_TopAddressPartial")
+			@await Component.InvokeAsync("_SocialMediaPartial")
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+
+	<!-- //header -->
+	<!--Slider-->
+	@await Component.InvokeAsync("_NavbarPartial")
+	<!--//Slider-->
+	<!--//Header-->
+	<!-- about -->
+	@await Component.InvokeAsync("_AboutPartial")
+	<!-- //about-bottom -->
+	<!--sevices-->
+	@await Component.InvokeAsync("_ServicePartial")
+	<!--//sevices-->
+	<!-- team -->
+	@await Component.InvokeAsync("_TeamPartial")
+	<!-- //team -->
+	<!--blog -->
+	@await Component.InvokeAsync("_AnnouncementPartial")
+	<!-- //blog -->
+	
+	<!--/gallery-->
+	@await Component.InvokeAsync("_ImagePartial")
+	<!--//gallery-->
+	<!--footer-->
+	@await Component.InvokeAsync("_AddressPartial")
+
+	@await Html.PartialAsync("/Views/Default/SendMessage.cshtml")
+		</div>
+	</div>
+	@await Component.InvokeAsync("_MapPartial")
+	<div class="copy">
+		<p>© @DateTime.Now.Year In Harvest . Tüm hakları saklıdır. | Design by <a href="http://w3layouts.com/">W3layouts</a> </p>
+	</div>
+	<!--/footer -->
+	@await Html.PartialAsync("/Views/Default/ScriptPartial.cshtml")
+
+
+</body>
+</html>
+
+

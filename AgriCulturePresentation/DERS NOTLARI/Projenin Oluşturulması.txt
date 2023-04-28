@@ -1,0 +1,21 @@
+Katmanlarımızı Oluşturuyoruz.
+
+1 - ) Entity Layer
+2 - ) DataAccessLayer
+3 - ) BusinessLayer
+4 - ) Projeyi ilk başlatttığım ASP.NETCORE MVC
+
+Nuget Paketler
+Referans işlemleri
+
+Entity Layer Katmanına Entities Klasörü içerisine prop'lar yazılır. Tablolar
+Data Access Katmanı AgriCultureContext oluştur Sql connection ve DbContext ler oluşturulur.
+
+Migration işlemi
+
+DataAccessLayer 
+Abstract Klasörü içerisine IGenericDal  ve Tablo Dal'ları yapılır.
+Generic Repository
+
+
+
